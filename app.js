@@ -23,14 +23,13 @@ const updateTaskList = () => {
                     <p>${task.text}</p>
                 </div>
                 <div class="icons">
-                    <img src="./img/edit.png" onClick="editTask(${index})"/>
-                    <img src="./img/delete.png" onClick="editTask(${index})"/>
+                    <img src="./img/edit.png" width="50px" onClick="editTask(${index})"/>
+                    <img src="./img/delete.png" width="50px" onClick="editTask(${index})"/>
                 </div>
             </div>`;
 
-        listItem.addEventListener('change', () => toggleTaskCompletion(index));{    
-            taskList.append(listItem);
-        } 
+        listItem.addEventListener('change', () => toggleTaskCompletion(index));   
+        taskList.append(listItem);
     })
 }
 

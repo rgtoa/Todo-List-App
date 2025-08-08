@@ -31,8 +31,7 @@ body {
     border: 2px solid var(--purple);
     display: flex;
     justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto
+    width: 600px;
 }
 
 .details {
@@ -68,7 +67,7 @@ body {
 }
 
 form {
-    max-width: 600px;
+    width: 600px;
     margin: 0 auto;
     padding-top: 60px;
     gap: 10px;
@@ -96,4 +95,32 @@ button {
     font-size: 30px;
     font-weight: bold;
     outline: none;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    max-width: 600px;
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 10px;
+}
+
+.taskItem {
+    display: flex;
+    padding: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
